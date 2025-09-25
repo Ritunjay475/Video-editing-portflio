@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Video Editor Portfolio — Your Name</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --neon-purple: #9d4edd;
+      --neon-cyan: #00f5d4;
+      --card-bg: rgba(255,255,255,0.03);
+    }
+
+    html,body{font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+
+    .bg-neon {
+      background: radial-gradient(800px 400px at 10% 10%, rgba(157,78,221,0.12), transparent 6%),
+                  radial-gradient(600px 300px at 90% 20%, rgba(0,245,212,0.06), transparent 8%),
+                  linear-gradient(180deg,#000000,#06040a);
+    }
+
+    .avatar-ring{
+      box-shadow: 0 0 24px rgba(157,78,221,0.4), 0 0 48px rgba(0,245,212,0.08) inset;
+      border-radius: 9999px;
+      padding: 6px;
+    }
+
+    .neon-border{
+      border: 1px solid rgba(157,78,221,0.18);
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      backdrop-filter: blur(6px);
+    }
+
+    .glow-btn{
+      box-shadow: 0 6px 30px rgba(157,78,221,0.18);
+    }
+
+    .tool-card:hover{
+      transform: translateY(-6px) scale(1.01);
+      box-shadow: 0 10px 40px rgba(157,78,221,0.14), 0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .thumb-overlay{
+      background: linear-gradient(180deg, rgba(0,0,0,0.0), rgba(0,0,0,0.55));
+    }
+
+    .neon-text{
+      text-shadow: 0 2px 18px rgba(157,78,221,0.18);
+    }
+
+    @media (min-width:1024px){
+      .hero-height{height: 78vh}
+    }
+  </style>
+</head>
+<body class="bg-neon text-white leading-relaxed">
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Hero -->
+    <header class="hero-height flex items-center">
+      <div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center py-12">
+        <div class="lg:col-span-7 text-center lg:text-left">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4 neon-text">I’m <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-cyan-300">RITUNJAY KUMAR</span></h1>
+          <p class="text-lg sm:text-xl text-gray-300 mb-6">Video Editor &amp; Graphic Designer — cinematic edits, motion graphics &amp; visual storytelling.</p>
+          <div class="flex flex-wrap justify-center lg:justify-start gap-4">
+            <a href="#portfolio" class="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-purple-600 to-purple-500 shadow-md glow-btn text-sm font-semibold">See My Work</a>
+            <a href="#contact" class="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-purple-500/30 neon-text text-sm font-semibold hover:bg-purple-800/20">Contact Me</a>
+          </div>
+          <div class="mt-8 flex flex-wrap justify-center lg:justify-start gap-6 text-sm text-gray-400">
+            <div class="flex items-center gap-3"><span class="w-3 h-3 rounded-full bg-purple-500"></span><span>Freelance & Contract</span></div>
+            <div class="flex items-center gap-3"><span class="w-3 h-3 rounded-full bg-cyan-400"></span><span>Turnaround: 24-72 hrs</span></div>
+            <div class="flex items-center gap-3"><span class="w-3 h-3 rounded-full bg-white/10"></span><span>Available for collaborations</span></div>
+          </div>
+        </div>
+        <div class="lg:col-span-5 flex justify-center lg:justify-end">
+          <div class="avatar-ring bg-gradient-to-tr from-purple-600 to-cyan-300 rounded-full p-1">
+            <div class="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 rounded-full neon-border overflow-hidden bg-black">
+              <img src="WhatsApp Image 2025-09-22 at 22.13.14_36ab6fbe.jpg" alt="Profile" class="w-full h-full object-cover">
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Tools Section -->
+    <section class="mt-6 py-12">
+      <h2 class="text-3xl font-bold text-center mb-8">Tools I Use</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="tool-card p-6 rounded-xl neon-border transition-transform duration-300 text-center sm:text-left flex flex-col sm:flex-row items-center sm:items-start gap-4">
+          <div class="w-16 h-16 rounded-lg flex items-center justify-center bg-gradient-to-br from-purple-900 to-purple-700"><span class="text-2xl font-bold">Pr</span></div>
+          <div><h3 class="font-semibold text-lg">Premiere Pro</h3><p class="text-sm text-gray-400">Editing</p></div>
+        </div>
+        <div class="tool-card p-6 rounded-xl neon-border transition-transform duration-300 text-center sm:text-left flex flex-col sm:flex-row items-center sm:items-start gap-4">
+          <div class="w-16 h-16 rounded-lg flex items-center justify-center bg-gradient-to-br from-indigo-900 to-indigo-700"><span class="text-2xl font-bold">Ae</span></div>
+          <div><h3 class="font-semibold text-lg">After Effects</h3><p class="text-sm text-gray-400">Motion Design & VFX</p></div>
+        </div>
+        <div class="tool-card p-6 rounded-xl neon-border transition-transform duration-300 text-center sm:text-left flex flex-col sm:flex-row items-center sm:items-start gap-4">
+          <div class="w-16 h-16 rounded-lg flex items-center justify-center bg-gradient-to-br from-cyan-700 to-cyan-500"><span class="text-2xl font-bold">Ps</span></div>
+          <div><h3 class="font-semibold text-lg">Photoshop</h3><p class="text-sm text-gray-400">Retouching & Graphics</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="py-12">
+      <h2 class="text-3xl font-bold text-center mb-10">My Work</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Video Projects -->
+        <article class="group rounded-xl overflow-hidden neon-border relative">
+          <video class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" autoplay muted loop playsinline>
+            <source src="1208(2).mp4" type="video/mp4">
+          </video>
+          <div class="absolute bottom-0 left-0 right-0 p-4 thumb-overlay flex flex-col sm:flex-row sm:items-center justify-between">
+            <div class="text-sm">Project Title — Video Edit</div>
+            <a href="1208(2).mp4" target="_blank" class="mt-2 sm:mt-0 inline-flex items-center px-3 py-2 rounded-full bg-gradient-to-r from-purple-600 to-purple-500 text-sm font-semibold">▶ Watch</a>
+          </div>
+        </article>
+
+        <article class="group rounded-xl overflow-hidden neon-border relative">
+          <video class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" autoplay muted loop playsinline>
+            <source src="1202.mp4" type="video/mp4">
+          </video>
+          <div class="absolute bottom-0 left-0 right-0 p-4 thumb-overlay flex flex-col sm:flex-row sm:items-center justify-between">
+            <div class="text-sm">Project Title — Video Edit</div>
+            <a href="1202.mp4" target="_blank" class="mt-2 sm:mt-0 inline-flex items-center px-3 py-2 rounded-full bg-gradient-to-r from-purple-600 to-purple-500 text-sm font-semibold">▶ Watch</a>
+          </div>
+        </article>
+
+        <article class="group rounded-xl overflow-hidden neon-border relative">
+          <video class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" autoplay muted loop playsinline>
+            <source src="Sequence 01_1.mp4" type="video/mp4">
+          </video>
+          <div class="absolute bottom-0 left-0 right-0 p-4 thumb-overlay flex flex-col sm:flex-row sm:items-center justify-between">
+            <div class="text-sm">Project Title — Video Edit</div>
+            <a href="Sequence 01_1.mp4" target="_blank" class="mt-2 sm:mt-0 inline-flex items-center px-3 py-2 rounded-full bg-gradient-to-r from-purple-600 to-purple-500 text-sm font-semibold">▶ Watch</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- About + Contact -->
+    <section class="py-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="lg:col-span-5 text-center lg:text-left">
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p class="text-gray-300 mb-6">I craft cinematic edits, motion graphics, and visual storytelling. With a focus on pacing, color grading and immersive sound design, I help brands and creators bring their ideas to life.</p>
+        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+          <img src="WhatsApp Image 2025-09-22 at 22.13.14_36ab6fbe.jpg" alt="you" class="w-24 h-24 rounded-xl neon-border object-cover">
+          <div><div class="font-semibold text-lg">RITUNJAY KUMAR</div><div class="text-sm text-gray-400">Video Editor & Graphic Designer</div></div>
+        </div>
+        <div class="mt-8">
+          <h3 class="font-semibold mb-3">Contact</h3>
+          <div class="flex justify-center lg:justify-start gap-3">
+            <a href="https://www.instagram.com/k.ritunjay?igsh=MTk3bjZmMGkybWwwYQ==" class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-600 to-purple-500 flex items-center justify-center">IG</a>
+            <a href="mailto:ritunjaykumar700@gmail.com" class="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-600 to-cyan-400 flex items-center justify-center">E-M</a>
+            <a href="https://www.linkedin.com/in/ritunjay-kumar-0a0378330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="w-10 h-10 rounded-full bg-gradient-to-br from-gray-700 to-gray-600 flex items-center justify-center">In</a>
+          </div>
+        </div>
+      </div>
+      <div class="lg:col-span-7">
+        <form id="contact" class="bg-[#0b0b0d] p-6 rounded-xl neon-border">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            <input name="name" class="p-3 rounded bg-[#070708] border border-white/6 w-full" placeholder="Name" required />
+            <input name="email" type="email" class="p-3 rounded bg-[#070708] border border-white/6 w-full" placeholder="Email" required />
+          </div>
+          <textarea name="message" class="w-full p-3 rounded bg-[#070708] border border-white/6 mb-4" rows="5" placeholder="Message" required></textarea>
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="text-sm text-gray-400 text-center sm:text-left">Or email directly: <a href="mailto:ritunjaykumar700@gmail.com" class="text-purple-400">ritunjaykumar700@gmail.com</a></div>
+            <button type="submit" class="px-6 py-3 rounded-full bg-gradient-to-r from-purple-600 to-purple-500 font-semibold w-full sm:w-auto">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="py-10 text-center text-sm text-gray-500">© <span id="year"></span> RITUNJAY KUMAR— Video Editor • All rights reserved.</footer>
+
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const href = a.getAttribute('href');
+        if(href.length>1){
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({behavior:'smooth'});
+        }
+      })
+    });
+
+    // ✅ SheetDB Integration
+   document.getElementById("contact").addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const data = {
+    name: form.name.value,
+    email: form.email.value,
+    message: form.message.value
+  };
+
+  try {
+    const res = await fetch("https://sheetdb.io/api/v1/fwjbrfu0dsftq", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data) // ✅ fixed
+    });
+
+    if (res.ok) {
+      alert("✅ Thanks! your details has been send. we will contact you");
+      form.reset();
+    } else {
+      alert("❌ Error: Something went wrong.");
+    }
+  } catch (err) {
+    console.error(err);
+    alert("⚠️ Network error. Please try again.");
+  }
+});
+
+  </script>
+</body>
+</html>
